@@ -3,10 +3,14 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.8'
+gem 'pg', '0.17.1'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3', '1.3.9'
   gem 'rspec-rails', '3.0.2'
+  gem 'spork-rails', '4.0.0'
+  gem 'guard-spork', '1.5.1'
+  gem 'childprocess', '0.5.3'
 end
 
 group :test do
